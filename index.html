@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
   <head>
     <meta charset="UTF-8" />
     <title>Contador de Cliques</title>
   </head>
   <body>
-    <h1>Contador de Cliques</h1>
-    <h2>Você não precisa de mim, mas eu existo.</h2>
-    <p id="contador">0</p>
-    <button onclick="aumentar()">Aumentar cliques</button>
-    <button onclick="diminuir()">Diminuir cliques</button>
-    <button onclick="reiniciar()">Reiniciar</button>
+    <div class="container__textos">
+      <h1 class="container__título">Contador de Cliques</h1>
+      <h2 class="container__descricao">
+        Você não precisa de mim, mas eu existo.
+      </h2>
+      <p class="contador" id="contador">0</p>
+
+      <button class="botao__aumentar" onclick="aumentar()">
+        Aumentar cliques
+      </button>
+      <button class="botao__diminuir" onclick="diminuir()">
+        Diminuir cliques
+      </button>
+      <button class="botao__reiniciar" onclick="reiniciar()">Reiniciar</button>
+    </div>
 
     <script src="script.js"></script>
   </body>

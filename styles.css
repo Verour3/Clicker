@@ -1,0 +1,120 @@
+:root {
+  --white: #ffffff;
+  --carbon: #303030;
+  --light-carbon: #4d4d4d;
+  --black: #1d1d1d;
+  --gray: #acacac;
+  --light-gray: #f1f1f1;
+  --blue: #3d66b3;
+  --light-blue: #5084c9;
+  --red: #8f0202;
+  --light-red: rgb(197, 13, 13);
+
+  --main-font: "Roboto";
+  --second-font: "Josefin Sans";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-gray);
+}
+
+.container__textos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.container__título {
+  color: var(--carbon);
+  font-family: var(--main-font);
+  font-size: 3em;
+  text-align: center;
+}
+
+.container__descricao {
+  color: var(--gray);
+  font-family: var(--main-font);
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--carbon);
+  font-family: var(--main-font);
+  font-size: 3em;
+}
+
+.botao__aumentar {
+  font-family: var(--main-font);
+  font-size: 1.2em;
+  padding: 1em;
+  margin: 0.2em;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--blue);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.botao__aumentar:active {
+  transform: scale(1.2);
+}
+
+.botao__aumentar:hover {
+  background-color: var(--light-blue);
+  transition: all 0.2s ease;
+}
+
+.botao__diminuir {
+  font-family: var(--main-font);
+  font-size: 1.2em;
+  padding: 1em;
+  margin: 0.2em;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.botao__diminuir:active {
+  transform: scale(1.2);
+}
+
+.botao__diminuir:hover {
+  background-color: var(--light-red);
+  transition: all 0.2s ease;
+}
+
+.botao__reiniciar {
+  font-family: var(--main-font);
+  font-size: 1.2em;
+  padding: 1em;
+  margin: 0.2em;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--carbon);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.botao__reiniciar:active {
+  transform: scale(1.2);
+}
+
+.botao__reiniciar:hover {
+  background-color: var(--light-carbon);
+  transition: all 0.2s ease;
+}
