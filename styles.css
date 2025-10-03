@@ -236,3 +236,8 @@ body {
     max-width: 100px;
   }
 }
+
+button,
+.achievement {
+  touch-action: manipulation;
+}
