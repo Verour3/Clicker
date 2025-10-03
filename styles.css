@@ -120,8 +120,8 @@ body {
 
 .achievement {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 600px;
+  right: 300px;
   background: var(--carbon);
   color: var(--white);
   padding: 15px 25px;
@@ -161,4 +161,30 @@ body {
 
 .flash {
   animation: flashYellow 0.1s ease;
+}
+
+.achievement-float {
+  position: fixed;
+  top: 60%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+  max-width: 150px;
+  z-index: 10000;
+  pointer-events: none;
+  animation: floatUp 3s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(-50%, -60%) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -80%) scale(1);
+  }
 }
