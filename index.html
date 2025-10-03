@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,13 +20,17 @@
       </h2>
       <p class="contador" id="contador">0</p>
 
-      <button class="botao__aumentar" onclick="aumentar()">
-        Aumentar cliques
-      </button>
-      <button class="botao__diminuir" onclick="diminuir()">
-        Diminuir cliques
-      </button>
-      <button class="botao__reiniciar" onclick="reiniciar()">Reiniciar</button>
+      <div class="container__botoes">
+        <button class="botao__aumentar" onclick="aumentar()">
+          Aumentar cliques
+        </button>
+        <button class="botao__diminuir" onclick="diminuir()">
+          Diminuir cliques
+        </button>
+        <button class="botao__reiniciar" onclick="reiniciar()">
+          Reiniciar
+        </button>
+      </div>
     </div>
 
     <script src="script.js"></script>
