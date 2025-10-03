@@ -29,7 +29,7 @@ const achievements = [
     meta: 400,
     texto: "Ninguém está te impedindo de parar... | Conte 400 cliques",
     sound: "sounds/achievement1.mp3",
-    image: "gifs/cat5.gif",
+    image: "gifs/cat6.gif",
   },
   {
     meta: 500,
@@ -41,6 +41,7 @@ const achievements = [
     meta: 510,
     texto: "O fim? | Pode clicar, mas não haverão novas conquistas",
     sound: "sounds/achievement1.mp3",
+    image: "gifs/end.gif",
   },
 ];
 
